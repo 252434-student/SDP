@@ -10,13 +10,13 @@ public class BasicRemote extends RemoteControl {
     public void turnOn() {
         device.setPowerState("On");
         device.setVolume(30);
-        System.out.println("Turning on "+device.returnType()+" at volume level 30.");
+        System.out.println(device);
     }
 
     @Override
     public void turnOff() {
         device.setPowerState("Off");
         device.setVolume(0);
-        System.out.println("Turning off "+device.returnType()+"...");
+        System.out.println(device);
     }
 }
