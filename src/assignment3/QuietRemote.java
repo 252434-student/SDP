@@ -3,7 +3,6 @@ package assignment3;
 public class QuietRemote extends RemoteControl{
     public QuietRemote(Device device, int id){
         super(device, id);
-        this.id = id;
     }
     @Override
     public void turnOn() {

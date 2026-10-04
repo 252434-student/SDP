@@ -3,7 +3,6 @@ package assignment3;
 public class BasicRemote extends RemoteControl {
     public BasicRemote(Device device, int id){
         super(device, id);
-        this.id = id;
     }
 
     @Override
