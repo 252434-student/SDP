@@ -12,4 +12,14 @@ Implementation → src/assignment3/Device\
 Concrete implementation 1 → src/assignment3/TV\
 Concrete implementation 2 → src/assignment3/Radio\
 Concrete implementation 3 → src/assignment3/Projector\
-Client → src/Main
+Client → src/Main\
+
+How to use:
+
+Copy src folder into your IDE.
+
+Run Main file.
+
+Input prompted options.
+
+Output is shown in the console.
