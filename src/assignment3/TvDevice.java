@@ -1,9 +1,8 @@
 package assignment3;
 
 public class TvDevice implements Device{
-    public String type = "TV";
-    public String powerState;
-    public int volume;
+    private String powerState;
+    private int volume;
     @Override
     public void setPowerState(String powerState) {
         this.powerState = powerState;
@@ -16,7 +15,7 @@ public class TvDevice implements Device{
 
     @Override
     public String returnType() {
-        return type;
+        return "TV";
     }
 
     @Override
