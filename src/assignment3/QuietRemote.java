@@ -9,13 +9,13 @@ public class QuietRemote extends RemoteControl{
     public void turnOn() {
         device.setVolume(5);
         device.setPowerState("On");
-        System.out.println(device);
+        device.execute();
     }
 
     @Override
     public void turnOff() {
         device.setVolume(0);
         device.setPowerState("Off");
-        System.out.println(device);
+        device.execute();
     }
 }

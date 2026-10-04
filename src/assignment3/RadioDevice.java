@@ -29,7 +29,7 @@ public class RadioDevice implements Device{
         return volume;
     }
     @Override
-    public String toString(){
-        return "Device type: "+returnType()+"; device power state: "+returnPowerState()+"; device volume: "+returnVolume();
+    public void execute(){
+        System.out.println("Device type: "+returnType()+"; device power state: "+returnPowerState()+"; device volume: "+returnVolume());
     }
 }

@@ -7,4 +7,6 @@ public interface Device {
     String returnType();
     String returnPowerState();
     int returnVolume();
+
+    void execute();
 }
