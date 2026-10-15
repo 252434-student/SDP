@@ -27,6 +27,7 @@ public class Radiator{
     public void changeTemperature(double temp){
         if(temp >= 35 && temp <=90){
             this.tempC = temp;
+            System.out.println("Setting temperature to "+this.tempC);
         }
         else if(temp > 90) {
             System.out.println("Radiator can't handle such temperature.");

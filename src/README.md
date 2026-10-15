@@ -1,5 +1,5 @@
 Assignment 4  
-Bridge design pattern  
+Facade design pattern  
 SE-2537 Amantay Ali  
 Topic (c):  Smart Home system  
 [github link](https://github.com/252434-student/SDP)  
