@@ -1,18 +1,26 @@
-import assignment5.*;
+import assignment6.*;
 
 public class Main {
     public void main(String[] args){
-        CalculatorContext calculatorContext = new CalculatorContext(new AddStrategy());
-        calculatorContext.performCalculation(11, 39);
+        TotalSizeVisitor totalSizeVisitor = new TotalSizeVisitor();
+        SearchVisitor searchVisitor = new SearchVisitor();
+        StatisticsVisitor statisticsVisitor = new StatisticsVisitor();
 
-        calculatorContext.setCalculatorStrategy(new SubtractStrategy());
-        calculatorContext.performCalculation(0, 65);
+        DirectoryNode dir1 = new DirectoryNode("dir1");
+        dir1.add(new FileNode("file1",1024));
+        dir1.add(new FileNode("file2",1024));
+        dir1.add(new FileNode("file3",1024));
+        dir1.add(new FileNode("file4",1024));
+        dir1.add(new FileNode("file5",1024));
 
-        calculatorContext.setCalculatorStrategy(new MultiplyStrategy());
-        calculatorContext.performCalculation(-4, -91);
+        totalSizeVisitor.visit(dir1);
+        totalSizeVisitor.getTotalByteSize();
 
-        calculatorContext.setCalculatorStrategy(new DivideStrategy());
-        calculatorContext.performCalculation(45, 5);
-        calculatorContext.performCalculation(5,2);
+        searchVisitor.setPattern("file2");
+        searchVisitor.visit(dir1);
+        searchVisitor.getPath();
+
+        statisticsVisitor.visit(dir1);
+        statisticsVisitor.getCount();
     }
 }
