@@ -22,7 +22,7 @@ public class Main {
         totalSizeVisitor.visit(dir1);
         totalSizeVisitor.getTotalByteSize();
 
-        searchVisitor.setPattern("file2");
+        searchVisitor.setPattern("file7");
         searchVisitor.visit(dir1);
         searchVisitor.getPath();
 
