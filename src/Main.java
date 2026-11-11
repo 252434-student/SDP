@@ -12,6 +12,12 @@ public class Main {
         dir1.add(new FileNode("file3",1024));
         dir1.add(new FileNode("file4",1024));
         dir1.add(new FileNode("file5",1024));
+        DirectoryNode dir2 = new DirectoryNode("dir2");
+        dir2.add(new FileNode("file6",1024));
+        dir2.add(new FileNode("file7",1024));
+        dir2.add(new FileNode("file8",1024));
+        dir1.add(dir2);
+
 
         totalSizeVisitor.visit(dir1);
         totalSizeVisitor.getTotalByteSize();

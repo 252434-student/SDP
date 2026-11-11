@@ -19,9 +19,11 @@ public class SearchVisitor implements Visitor{
 
     @Override
     public void visit(DirectoryNode directoryNode) {
-        path += directoryNode.directoryName+"/";
-        for(Element e : directoryNode.directory){
-            e.accept(this);
+        if(!match) {
+            path += directoryNode.directoryName + "/";
+            for (Element e : directoryNode.directory) {
+                e.accept(this);
+            }
         }
     }
 
